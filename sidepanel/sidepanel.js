@@ -57,6 +57,5 @@ $(document).ready(function () {
   buildRankingList();
 
 
-  document.getElementById("debug").addEventListener("click", buildHistoricalList(startDate));
 
 });
