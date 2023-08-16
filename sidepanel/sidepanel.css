@@ -3,6 +3,7 @@ body,
 .block {
   height: 100%;
 }
+
 .tabs-menu {
   position: relative;
   overflow-x: auto;
