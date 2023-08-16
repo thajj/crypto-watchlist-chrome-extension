@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Currency List</title>
+
+  <link rel="stylesheet" href="../lib/materialize.min.css">
+  <link rel="stylesheet" href="./sidepanel.css" />
+</head>
+
+<body>
+  <ul class="tabs tabs-fixed-width tabs-menu z-depth-1">
+    <li class="tab col s3 "><a href="#rankingListTab">Today's ranking</a></li>
+    <li class="tab col s3"><a href="#historicalRankingListTab">Historical</a></li>
+  </ul>
+  </div>
+
+  <div class="container">
+    <div id="rankingListTab" class="col s12">
+      <ul id="rankingList" class="collection"></ul>
+      <div id="test2" class="col s12"></div>
+
+    </div>
+
+    <div id="historicalRankingListTab" class="col s12">
+      <ul id="historicalRankingList" class="collection with-header"></ul>
+      <div id="loader" class="progress hide">
+        <div class="indeterminate"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<script src="../lib/jquery-3.7.0.min.js"></script>
+<script src="../lib/materialize.min.js"></script>
+<script src="./sidepanel.js" type="module"></script>
+</body>
+
+</html>

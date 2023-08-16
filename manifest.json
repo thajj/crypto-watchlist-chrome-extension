@@ -1,0 +1,47 @@
+{
+  "name": "Historical crypto ranking  🚀",
+  "short_name": "Crypto ",
+  "description": "This extension present the weekly crypto ranking in the sidepanel of chrome",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting",
+    "alarms",
+    "sidePanel",
+    "notifications",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.coinmarketcap.com/data-api/v3/"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Click to open the panel"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://coinmarketcap.com/*"
+      ],
+      "js": [
+        "lib/jquery-3.7.0.min.js",
+        "scripts/content-script.js",
+        "sidepanel/sidepanel.js"
+      ],
+      "css": [
+        "sidepanel/sidepanel.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
